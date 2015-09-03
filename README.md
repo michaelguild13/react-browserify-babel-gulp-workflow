@@ -2,6 +2,7 @@
 React, brwoserify, babel, gulp, es6, jsx work flow build 
 
 npm i --save-dev gulp gulp-util gulp-sourcemaps watchify browserify vinyl-source-stream vynyl-buffer lodash.assign
+
 npm i --save react
 
 app/app.jsx
