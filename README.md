@@ -1,5 +1,43 @@
 # react-browserify-babel-gulp-workflow
 React, brwoserify, babel, gulp, es6, jsx work flow build 
+
+npm i --save-dev gulp gulp-util gulp-sourcemaps watchify browserify vinyl-source-stream vynyl-buffer lodash.assign
+npm i --save react
+
+app/app.jsx
+```
+"use strict";
+
+var React = require('react');
+
+var App = React.createClass({
+  render: function() {
+    return (
+      <div className="reactMe">
+        Hello, world! I am a react.
+      </div>
+    );
+  }
+});
+
+React.render(<App />,document.getElementById('app'));
+```
+index.html
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="dist/app.js"></script>
+  </body>
+</html>
+```
+
+gulpfile.js
 ```
 // helped from https://github.com/gulpjs/gulp/blob/master/docs/recipes/fast-browserify-builds-with-watchify.md
 
